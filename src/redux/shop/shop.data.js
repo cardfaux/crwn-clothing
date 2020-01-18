@@ -1,38 +1,64 @@
-const SHOP_DATA = {
-    hats: {
+import eleaf2 from '../../assets/img/shop-data/eleaf/eleaf2.jpeg';
+import eleaf3 from '../../assets/img/shop-data/eleaf/eleaf3.jpeg';
+import eleaf4 from '../../assets/img/shop-data/eleaf/eleaf4.jpeg';
+import eleaf5 from '../../assets/img/shop-data/eleaf/eleaf5.jpeg';
+import eleaf6 from '../../assets/img/shop-data/eleaf/eleaf6.jpeg';
+import joyetech2 from '../../assets/img/shop-data/joyetech/joyetech2.jpeg';
+import joyetech3 from '../../assets/img/shop-data/joyetech/joyetech3.jpeg';
+import joyetech4 from '../../assets/img/shop-data/joyetech/joyetech4.jpeg';
+import joyetech5 from '../../assets/img/shop-data/joyetech/joyetech5.jpeg';
+import joyetech6 from '../../assets/img/shop-data/joyetech/joyetech6.jpeg';
+import kangertech2 from '../../assets/img/shop-data/kangertech/kangertech2.png';
+import kangertech3 from '../../assets/img/shop-data/kangertech/kangertech3.jpeg';
+import kangertech4 from '../../assets/img/shop-data/kangertech/kangertech4.jpeg';
+import kangertech5 from '../../assets/img/shop-data/kangertech/kangertech5.jpeg';
+import kangertech6 from '../../assets/img/shop-data/kangertech/kangertech6.jpeg';
+import smok2 from '../../assets/img/shop-data/smok/smok2.jpg';
+import smok3 from '../../assets/img/shop-data/smok/smok3.jpg';
+import smok4 from '../../assets/img/shop-data/smok/smok4.jpg';
+import smok5 from '../../assets/img/shop-data/smok/smok5.jpg';
+import smok6 from '../../assets/img/shop-data/smok/smok6.jpg';
+import vaporesso2 from '../../assets/img/shop-data/vaporesso/vaporesso2.jpeg';
+import vaporesso3 from '../../assets/img/shop-data/vaporesso/vaporesso3.jpeg';
+import vaporesso4 from '../../assets/img/shop-data/vaporesso/vaporesso4.jpeg';
+import vaporesso5 from '../../assets/img/shop-data/vaporesso/vaporesso5.jpeg';
+import vaporesso6 from '../../assets/img/shop-data/vaporesso/vaporesso6.jpeg';
+
+const SHOP_DATA = [
+    {
       id: 1,
-      title: 'Hats',
-      routeName: 'hats',
+      title: 'Eleaf',
+      routeName: 'eleaf',
       items: [
         {
           id: 1,
-          name: 'Brown Brim',
-          imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-          price: 25
+          name: 'Eleaf Vortex',
+          imageUrl: eleaf2,
+          price: 78
         },
         {
           id: 2,
-          name: 'Blue Beanie',
-          imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
-          price: 18
+          name: 'SnowWolf VFeng',
+          imageUrl: eleaf3,
+          price: 89
         },
         {
           id: 3,
-          name: 'Brown Cowboy',
-          imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
-          price: 35
+          name: 'VaporFI VAOI',
+          imageUrl: eleaf4,
+          price: 125
         },
         {
           id: 4,
-          name: 'Grey Brim',
-          imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
-          price: 25
+          name: 'FreeMax Twizz',
+          imageUrl: eleaf5,
+          price: 85
         },
         {
           id: 5,
-          name: 'Green Beanie',
-          imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
-          price: 18
+          name: 'VGOD STIGG',
+          imageUrl: eleaf6,
+          price: 99
         },
         {
           id: 6,
@@ -60,39 +86,39 @@ const SHOP_DATA = {
         }
       ]
     },
-    sneakers: {
+    {
       id: 2,
-      title: 'Sneakers',
-      routeName: 'sneakers',
+      title: 'JoyEtech',
+      routeName: 'joyetech',
       items: [
         {
           id: 10,
-          name: 'Adidas NMD',
-          imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
-          price: 220
+          name: 'ExCeed X',
+          imageUrl: joyetech2,
+          price: 89
         },
         {
           id: 11,
-          name: 'Adidas Yeezy',
-          imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
-          price: 280
+          name: 'Teros One1',
+          imageUrl: joyetech3,
+          price: 120
         },
         {
           id: 12,
-          name: 'Black Converse',
-          imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
+          name: 'Exceed Grip',
+          imageUrl: joyetech4,
           price: 110
         },
         {
           id: 13,
-          name: 'Nike White AirForce',
-          imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
+          name: 'Exceed D19',
+          imageUrl: joyetech5,
           price: 160
         },
         {
           id: 14,
-          name: 'Nike Red High Tops',
-          imageUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
+          name: 'eGo AIO',
+          imageUrl: joyetech6,
           price: 160
         },
         {
@@ -115,77 +141,77 @@ const SHOP_DATA = {
         }
       ]
     },
-    jackets: {
+    {
       id: 3,
-      title: 'Jackets',
-      routeName: 'jackets',
+      title: 'KangerTech',
+      routeName: 'kangertech',
       items: [
         {
           id: 18,
-          name: 'Black Jean Shearling',
-          imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
+          name: 'Kanger GEM',
+          imageUrl: kangertech2,
           price: 125
         },
         {
           id: 19,
-          name: 'Blue Jean Jacket',
-          imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
+          name: 'Kanger SubBox',
+          imageUrl: kangertech3,
           price: 90
         },
         {
           id: 20,
-          name: 'Grey Jean Jacket',
-          imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
+          name: 'Kanger Ranger',
+          imageUrl: kangertech4,
           price: 90
         },
         {
           id: 21,
-          name: 'Brown Shearling',
-          imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
+          name: 'Kanger Ripple',
+          imageUrl: kangertech5,
           price: 165
         },
         {
           id: 22,
-          name: 'Tan Trench',
-          imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
+          name: 'Kanger CX II',
+          imageUrl: kangertech6,
           price: 185
         }
       ]
     },
-    womens: {
+    {
       id: 4,
-      title: 'Womens',
-      routeName: 'womens',
+      title: 'Smok',
+      routeName: 'smok',
       items: [
         {
           id: 23,
-          name: 'Blue Tanktop',
-          imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
-          price: 25
+          name: 'G-Prim-V',
+          imageUrl: smok2,
+          price: 135
         },
         {
           id: 24,
-          name: 'Floral Blouse',
-          imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
-          price: 20
+          name: 'NOVO2',
+          imageUrl: smok3,
+          price: 205
         },
         {
           id: 25,
-          name: 'Floral Dress',
-          imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
-          price: 80
+          name: 'Nord-K',
+          imageUrl: smok4,
+          price: 180
         },
         {
           id: 26,
-          name: 'Red Dots Dress',
-          imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
-          price: 80
+          name: 'Morph 219',
+          imageUrl: smok5,
+          price: 180
         },
         {
           id: 27,
-          name: 'Striped Sweater',
-          imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
-          price: 45
+          name: 'Trinity',
+          imageUrl: smok6,
+          price: 145
         },
         {
           id: 28,
@@ -201,40 +227,40 @@ const SHOP_DATA = {
         }
       ]
     },
-    mens: {
+    {
       id: 5,
-      title: 'Mens',
-      routeName: 'mens',
+      title: 'VaporesSo',
+      routeName: 'vaporesso',
       items: [
         {
           id: 30,
-          name: 'Camo Down Vest',
-          imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
-          price: 325
+          name: 'Avenger',
+          imageUrl: vaporesso2,
+          price: 125
         },
         {
           id: 31,
-          name: 'Floral T-shirt',
-          imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
-          price: 20
+          name: 'SwagX',
+          imageUrl: vaporesso3,
+          price: 120
         },
         {
           id: 32,
-          name: 'Black & White Longsleeve',
-          imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
-          price: 25
+          name: 'SwitcherMax',
+          imageUrl: vaporesso4,
+          price: 125
         },
         {
           id: 33,
-          name: 'Pink T-shirt',
-          imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
-          price: 25
+          name: 'Aurora',
+          imageUrl: vaporesso5,
+          price: 125
         },
         {
           id: 34,
-          name: 'Jean Long Sleeve',
-          imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
-          price: 40
+          name: 'Revenger-M',
+          imageUrl: vaporesso6,
+          price: 140
         },
         {
           id: 35,
@@ -244,7 +270,7 @@ const SHOP_DATA = {
         }
       ]
     }
-  };
+  ];
   
   export default SHOP_DATA;
   

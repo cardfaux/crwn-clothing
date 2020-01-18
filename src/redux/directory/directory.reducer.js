@@ -1,36 +1,43 @@
+import  KangerTeach1 from '../../assets/img/directory/kangertech1.jpeg';
+import Smok1 from '../../assets/img/directory/smok1.jpg';
+import Vaporesso1 from '../../assets/img/directory/vaporesso1.jpeg';
+import Eleaf1 from '../../assets/img/directory/eleaf1.jpeg';
+import Joyetech1 from '../../assets/img/directory/joyetech1.jpeg';
+
+
 const INITIAL_STATE = {
     sections: [
       {
-        title: 'hats',
-        imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+        title: 'kangertech',
+        imageUrl: KangerTeach1,
         id: 1,
-        linkUrl: 'shop/hats'
+        linkUrl: 'kangertech',
       },
       {
-        title: 'jackets',
-        imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+        title: 'smok',
+        imageUrl: Smok1,
         id: 2,
-        linkUrl: 'shop/jackets'
+        linkUrl: 'smok',
       },
       {
-        title: 'sneakers',
-        imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+        title: 'vaporesso',
+        imageUrl: Vaporesso1,
         id: 3,
-        linkUrl: 'shop/sneakers'
+        linkUrl: 'vaporesso',
       },
       {
-        title: 'womens',
-        imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+        title: 'eleaf',
+        imageUrl: Eleaf1,
         size: 'large',
         id: 4,
-        linkUrl: 'shop/womens'
+        linkUrl: 'eleaf',
       },
       {
-        title: 'mens',
-        imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+        title: 'joyetech',
+        imageUrl: Joyetech1,
         size: 'large',
         id: 5,
-        linkUrl: 'shop/mens'
+        linkUrl: 'joyetech',
       }
     ]
   };
